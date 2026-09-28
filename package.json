@@ -1,0 +1,49 @@
+{
+  "name": "carbon-lime-theme",
+  "displayName": "Carbon Lime",
+  "description": "A calm, near-black dark theme with a vivid green accent. Works with any icon theme.",
+  "version": "1.0.0",
+  "publisher": "pittana",
+  "author": {
+    "name": "Patricio Pittana"
+  },
+  "license": "MIT",
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#0A0A0A",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lunatico0/carbon-lime-theme"
+  },
+  "bugs": {
+    "url": "https://github.com/Lunatico0/carbon-lime-theme/issues"
+  },
+  "homepage": "https://github.com/Lunatico0/carbon-lime-theme#readme",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark",
+    "dark theme",
+    "black",
+    "carbon",
+    "green",
+    "high contrast",
+    "color-theme"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Carbon Lime",
+        "uiTheme": "vs-dark",
+        "path": "./themes/carbon-lime-color-theme.json"
+      }
+    ]
+  }
+}

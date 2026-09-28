@@ -1,0 +1,271 @@
+/* Carbon Lime extras: UI tweaks loaded with the "Custom CSS and JS Loader" extension.
+   Colors come from the active theme through --vscode-* variables.
+   Fonts used: Geist Sans, Geist Mono and Monaspace Radon (install them or edit the font-family lines). */
+
+/* Keep widgets above badges and tab borders */
+.overlayWidgets,
+.badge-content,
+.composite-bar-container,
+.tab-border-top-container {
+  z-index: 0 !important;
+}
+
+/* Cursive font for one token class. .mtk3 is assigned by the theme, so check which tokens it hits. */
+.mtk3 {
+  font-family: 'Monaspace Radon', 'Geist Mono', monospace !important;
+}
+
+.line-numbers {
+  position: relative !important;
+  width: auto !important;
+  font-size: 14px !important;
+  font-family: 'Geist Mono' !important;
+  opacity: .3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Code canvas top shadow */
+.monaco-editor .scroll-decoration {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, .75) !important;
+  top: -6px !important;
+}
+
+/* Toolbars when tabs are enabled. */
+.monaco-workbench .part.editor>.content .editor-group-container>.title .editor-actions {
+  display: none !important;
+}
+
+/* Side bar */
+.part.sidebar {
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, .25);
+}
+
+/* File Explorer Selected Item */
+.monaco-list.list_id_1 .monaco-list-row.selected {
+  background-color: var(--vscode-list-activeSelectionBackground) !important;
+  opacity: 1 !important;
+  border-top: 1px var(--vscode-focusBorder) solid;
+  border-bottom: 1px var(--vscode-focusBorder) solid;
+}
+
+/* List item label name */
+.monaco-list.list_id_1 .monaco-list-row.selected .label-name {
+  color: #fff !important;
+  opacity: 1 !important;
+}
+
+/* File explorer action buttons */
+.monaco-workbench .part.sidebar .title-actions .actions-container {
+  display: none;
+}
+
+/* File Explorer Item Label */
+.monaco-tree .monaco-tree-row .label-name,
+.monaco-list .monaco-list-row .monaco-icon-label .label-name {
+  font-family: 'Geist Sans', monospace !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: #FFF !important;
+}
+
+/* Sidebar top shadow */
+.monaco-scrollable-element>.shadow.top {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, .75) !important;
+  top: -3px !important;
+}
+
+/* Sidebar title */
+.composite.title {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-items: center !important;
+}
+
+.composite.title h2 {
+  font-weight: bold !important;
+  font-size: 12px !important;
+  text-transform: uppercase;
+  color: var(--vscode-textLink-foreground) !important;
+}
+
+.composite.title h2::before {
+  display: inline-block;
+  margin-right: 6px;
+  font-size: 1.1rem;
+  content: '🚀';
+}
+
+/* Scroll Bar */
+.slider {
+  position: absolute !important;
+  right: 1px !important;
+  width: 5px !important;
+  background: var(--vscode-scrollbarSlider-activeBackground) !important;
+  left: auto !important;
+}
+
+.codicon-toolbar-more,
+.codicon-word-wrap {
+  display: block !important;
+}
+
+/* Tooltip box style */
+.monaco-editor-hover,
+.monaco-hover {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, .45) !important;
+  padding-right: 24px !important;
+  background-image: linear-gradient(var(--vscode-editor-background) 0%, var(--vscode-editorHoverWidget-background) 100%) !important;
+  backdrop-filter: blur(3px) !important;
+  border-radius: 20px !important;
+  border: none !important;
+  border: transparent !important;
+}
+
+/* Project title's style at the top. */
+.monaco-workbench .part.titlebar>.titlebar-container>.titlebar-center>.window-title>.command-center .action-item.command-center-center {
+  border: none !important;
+  background: transparent !important;
+  font-size: 14px !important;
+}
+
+.monaco-workbench .part.titlebar>.titlebar-container>.titlebar-center {
+  max-width: none !important;
+  width: 100% !important;
+  justify-content: center;
+}
+
+/* Project Title */
+.titlebar-left {
+  /* justify-content: flex-start !important; */
+  flex-grow: 0 !important;
+  width: 10% !important;
+}
+
+/* Search Label */
+.search-label {
+  font-family: 'Geist Mono' !important;
+  font-size: 14px !important;
+  color: #fff;
+  display: block;
+}
+
+/* Search icon */
+.search-icon {
+  display: none !important;
+}
+
+.codicon-search::before {
+  display: none !important;
+}
+
+.codicon-arrow-right,
+.codicon-arrow-left {
+  display: none !important;
+}
+
+.titlebar-right>* {
+  display: none !important;
+}
+
+/* Command Palette */
+.quick-input-widget {
+  transform: translateY(-50%) !important;
+  top: 50% !important;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, .45) !important;
+  padding: 10px 10px 18px 10px !important;
+  background-image: linear-gradient(var(--vscode-editor-background) 0%, var(--vscode-quickInput-background) 100%) !important;
+  border: 1px solid var(--vscode-editorGroup-border) !important;
+  border-radius: 20px !important;
+}
+
+/* Remove background for lists */
+.monaco-list-rows {
+  background: transparent !important;
+}
+
+/* List hover */
+.monaco-list-row:hover {
+  background: rgba(0, 0, 0, .2) !important;
+}
+
+.notifications-toasts .monaco-list-row:hover {
+  background: none !important;
+}
+
+/* Command palette text input */
+.quick-input-filter .monaco-inputbox {
+  border-radius: 12px !important;
+  padding: 8px !important;
+  border: none !important;
+  background-color: var(--vscode-input-background) !important;
+  font-family: "Geist Mono" !important;
+  font-size: 14px !important;
+  margin-bottom: 16px !important;
+}
+
+.has-selection {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+#command-blur {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .15);
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(8px);
+}
+
+.sticky-line-content {
+  background: rgba(255, 255, 255, 0.2);
+  /* Asegura un fondo semi-transparente */
+  backdrop-filter: blur(3px);
+  /* Aplica el desenfoque */
+  -webkit-backdrop-filter: blur(3px);
+  /* Compatibilidad con WebKit */
+  position: relative;
+  /* Asegura que el elemento sea posicionable */
+  z-index: 10;
+  /* Opcional: ajusta el z-index si es necesario */
+}
+
+/* Command palette's input box placeholder. */
+.monaco-inputbox input::placeholder {
+  color: rgba(255, 255, 255, .3) !important;
+}
+
+.monaco-workbench label {
+  color: #fff !important;
+  font-size: 14px !important;
+}
+
+/* Container that holds the VS Code home icon. */
+.editor-group-watermark {
+  max-width: none !important;
+}
+
+.command-center-center {
+  width: auto !important;
+}
+
+/* .letterpress {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 10 380 450'%3E%3Cpath style='stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-dashoffset:0;stroke-linejoin:miter;stroke-miterlimit:4;fill:rgba(255, 255, 255, .7);fill-rule:nonzero;opacity:1' transform='matrix(10 0 0 9 0 -100)' d='M10.38 46.92V23.64l-1.44-.42c-.54-.18-.84-.66-.84-1.2v-5.88c0-.42.48-1.14.9-1.14h16.8c6 0 9.9 2.58 10.62 8.76l.24 1.74.12 2.58v2.58c0 7.8-2.46 12.66-10.56 12.66l-7.68.06v1.02h.78l-.78.54v.96l2.04-1.5h.96l-3 2.22v.3l.6.24 3.72-2.76h.9l-3.84 2.94c.48.18 1.02.6 1.02 1.26v5.82c0 .54-.48 1.2-1.02 1.2H9.06c-.54 0-.96-.66-.96-1.2v-5.88c0-.48.36-.96.84-1.08zM3 20.82l1.92-1.44h.96L3 21.54zm0 1.68 4.08-3.12v.78L3 23.22zm0 1.68 4.08-3.12v.72L3 24.9zm0 2.34v-.66l4.02-3.06c.12.18.18.42.18.66zm15.54-2.58v1.92l1.2-.9h.96l-2.16 1.62v.96l3.42-2.58h1.02l-4.44 3.3v6.18h4.98c.06-.18.06-.48.06-.6l4.08-3.12v.78l-3.9 2.94h1.02c.06 0 .24-.06.24-.06l2.58-1.92v.06c0 .12.06.66-.12.78l-1.38 1.02c1.8.06 2.4-1.02 2.46-2.7.06-.78.12-1.5.12-2.22q0-1.53-.18-3.06c-.24-2.16-1.56-2.4-3.48-2.4zM3.3 27.3l4.26-3.24c.24.12.54.18.66.24l-4.38 3.3c-.18 0-.42-.18-.54-.3m2.04.72-.6-.12 4.38-3.3c.12 0 .24 0 .3.06v.42L5.34 28.2zm14.4.3 4.5-3.36c.3 0 .6 0 .9.06l-4.44 3.3zm2.04.18 4.32-3.3h.06s.18.12.24.12c.12.06.18.12.3.18l-4.32 3.24h-.06c-.12-.12-.42-.18-.54-.24M5.34 29.88v-.78l4.08-3.06v.72zm17.64-.66 4.2-3.12c.06 0 .24.42.24.54l-.06.06-4.14 3.06c-.12-.12-.18-.3-.24-.54m.42 1.38 4.14-3.06s.06.36.06.6c0 .06 0 .06-.06.06l-4.08 3.06s-.06-.42-.06-.66m-18.06.18 4.08-3.06v.66l-4.08 3.06zm18.18 1.38h.06l4.02-3c.06.06.06.36.06.54v.12l-4.08 3.06c-.06-.24-.06-.36-.06-.6zm-18.18.24 4.08-3.06v.72l-4.08 3.06zm0 2.4v-.72l4.08-3.06v.72zm0 1.68v-.72l4.08-3.06v.72zm0 .96 4.08-3.06v.72l-4.08 3.06zm0 2.4v-.72l4.08-3.06v.72zm0 1.68v-.72l4.08-3.12v.78zm0 .96 4.08-3.12v.78L5.34 43.2zm0 1.68 4.08-3.12v.72l-4.08 3.12zm0 2.4v-.78l4.08-3.06v.72zm17.7 1.02 4.62-3.42 1.26-.24-4.62 3.48zm3.12-3.3-4.5 3.42h-1.08l4.44-3.3c.12-.12 1.02-.12 1.14-.12M5.34 47.46l4.08-3.06v.72l-4.08 3.12zm20.94-.66 3-2.22c0 .48-2.52 2.1-3 2.22M5.34 49.14l4.08-3.06v.72l-4.08 3.12zm0 2.22v-.54l1.8-1.32c0 .24 0 .66-.06.66L3 53.22v-.12c0-.18 0-.54.12-.6.12-.12.78-.6 1.02-.78zM3 54.18l4.08-3.06v.72L3 54.96zm0 1.68 4.08-3.06v.72L3 56.58zm0 2.4v-.72l4.08-3.06v.72zm.06.9L7.2 56.1c.18.12.36.24.48.36l-4.26 3.18-.06.06c-.06 0-.3-.42-.3-.54m1.2.84 4.44-3.36h.96L5.22 60zm2.22 0 4.44-3.36h1.02L7.44 60zm2.22 0 4.5-3.36h.96L9.66 60zm3.24 0h-.96l4.44-3.36h.42v.42zm1.26 0 2.64-1.98v.72L14.16 60z'/%3E%3C/svg%3E")!important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: 60% !important;
+  height: 60% !important;
+} */
+
+.letterpress {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-75 -60 350 350'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23f0f'/%3E%3Cstop offset='50%25' stop-color='%239e99ff'/%3E%3Cstop offset='100%25' stop-color='%230ff'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23af48d5'/%3E%3Cstop offset='50%25' stop-color='%239d9ae1'/%3E%3Cstop offset='100%25' stop-color='%23d3c4a6'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23241b21'/%3E%3Cstop offset='30%25' stop-color='%230f0e08'/%3E%3Cstop offset='60%25' stop-color='%23010404'/%3E%3Cstop offset='100%25' stop-color='%23000'/%3E%3C/linearGradient%3E%3ClinearGradient id='d' gradientTransform='rotate(70)'%3E%3Cstop offset='10%25' stop-color='%23fff'/%3E%3Cstop offset='90%25' stop-color='%23000'/%3E%3C/linearGradient%3E%3ClinearGradient id='gold-highlight' gradientTransform='rotate(30)' y1='0%25' y2='30%25'%3E%3Cstop offset='0%25' stop-color='transparent'/%3E%3Cstop offset='75%25' stop-color='%23a07d00'/%3E%3Cstop offset='100%25' stop-color='%23ffc700'/%3E%3C/linearGradient%3E%3Cfilter id='neon-glow' x='-50%25' y='-50%25' width='200%25' height='200%25'%3E%3CfeGaussianBlur in='SourceGraphic' stdDeviation='2' result='glow1'/%3E%3CfeGaussianBlur in='SourceGraphic' stdDeviation='6' result='glow2'/%3E%3CfeGaussianBlur in='SourceGraphic' stdDeviation='10' result='glow3'/%3E%3CfeMerge%3E%3CfeMergeNode in='glow1'/%3E%3CfeMergeNode in='glow2'/%3E%3CfeMergeNode in='glow3'/%3E%3CfeMergeNode in='SourceGraphic'/%3E%3C/feMerge%3E%3C/filter%3E%3C/defs%3E%3Ccircle cx='100' cy='115' r='150' fill='none' stroke='%23fff' stroke-width='8'/%3E%3Ccircle cx='100' cy='115' r='150' fill='none' stroke='url(%23a)' stroke-width='6' filter='url(%23neon-glow)'/%3E%3Cg transform='translate(-10 -25) scale(1.2)'%3E%3Cpath stroke-width='2' stroke='url(%23b)' fill='url(%23c)' d='M34.3 201.9454 88.2 201.9454 88.2 160 115 160A.9.8765 0 00115 37.1576L34.3 37.1576 34.3 201.9454Z'/%3E%3Cg transform='translate(-100 -73) scale(1.14)'%3E%3Cpath stroke='url(%23gold-highlight)' fill='url(%23d)' stroke-width='1.5' d='m143.8523 155.9757a1.5552 1.5552 90 00.4319 1.0079l13.2075 13.2474a4.4064 4.4064 90 01-.0496 6.0161 4.2912 4.2912 90 01-6.0598.0933l-17.2645-17.3118a4.4064 4.4064 90 010-6.1057l23.2992-23.3567a4.32 4.32 90 016.1057 0 4.4064 4.4064 90 01-.0002 6.1055l-19.2672 19.2673a1.5552 1.5552 90 00-.403 1.0367z'/%3E%3Cpath stroke='url(%23gold-highlight)' fill='url(%23d)' stroke-width='1' d='M173.7627 187.8423l18.1921-63.4433a4 4 106 00-9.6126-2.7564l-18.1921 63.4433a1 1 16 009.6126 2.7564Z'/%3E%3Cpath stroke='url(%23gold-highlight)' fill='url(%23d)' stroke-width='1.5' d='m215.1477 153.9753a1.5552 1.5552-90 00-.4319-1.0079L201.5083 139.72a4.4064 4.4064-90 01.0496-6.0161 4.2912 4.2912-90 016.0598-.0933l17.2645 17.3118a4.4064 4.4064-90 010 6.1057l-23.2992 23.3567a4.32 4.32-90 01-6.1057 0 4.4064 4.4064-90 01.0002-6.1055l19.2672-19.2673a1.5552 1.5552-90 00.403-1.0367z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: 60% !important;
+  height: 60% !important;
+}

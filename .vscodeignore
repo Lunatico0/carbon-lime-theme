@@ -1,0 +1,6 @@
+.git/**
+.gitignore
+extras/**
+images/logo.svg
+images/screenshots/**
+*.vsix
