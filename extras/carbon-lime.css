@@ -103,7 +103,6 @@
   position: absolute !important;
   right: 1px !important;
   width: 5px !important;
-  background: var(--vscode-scrollbarSlider-activeBackground) !important;
   left: auto !important;
 }
 

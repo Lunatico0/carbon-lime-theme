@@ -161,9 +161,9 @@
     "minimap.background": "#101213",
     "minimapSlider.background": "#FFFFFF10",
     "scrollbar.shadow": "#00000000",
-    "scrollbarSlider.background": "#FFFFFF10",
-    "scrollbarSlider.hoverBackground": "#FFFFFF1A",
-    "scrollbarSlider.activeBackground": "#39EA5F60",
+    "scrollbarSlider.background": "#39EA5F33",
+    "scrollbarSlider.hoverBackground": "#39EA5F66",
+    "scrollbarSlider.activeBackground": "#39EA5FAA",
 
     "input.background": "#101213",
     "input.border": "#1D2122",
