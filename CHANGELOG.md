@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2
+
+- Define `inlineChatInput.border` so progress bar tracks in webviews (such as the Claude Code usage bars) no longer inherit the green widget border and look full.
+
 ## 1.0.1
 
 - Scrollbar sliders now use the green accent (idle, hover and drag).
