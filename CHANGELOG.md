@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.3
+
+- `inlineChatInput.border` is now a translucent green (`#39EA5F66`), so webview tool boxes keep a green border and the Claude Code usage bar track stays visible behind the fill.
+
 ## 1.0.2
 
 - Define `inlineChatInput.border` so progress bar tracks in webviews (such as the Claude Code usage bars) no longer inherit the green widget border and look full.
